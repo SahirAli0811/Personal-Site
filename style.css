@@ -1,0 +1,103 @@
+.hero-section {
+    background-color: #171717;
+    height: 1080px;
+}
+
+aside {
+    background-color: #292929;
+    width: fit-content;
+    transform: translate(15px, -20px);
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 450px;
+}
+
+.Name {
+    color: #f0f0f0;
+    text-align: center;
+    transform: translate(0px, 10px);
+    background-color: #555555;
+}
+
+.Logo {
+    height: 200px;
+    border-radius: 50%;
+    position: center;
+    transform: translate(22%);
+}
+
+.blank {
+    background-color: #555555;
+    height: 5px;
+    transform: translate(0px, -10px);
+}
+
+.born {
+    color: #f0f0f0;
+    text-align: center;
+    transform: translate(0px, -50px);
+}
+
+.spouse {
+    color: #f0f0f0;
+    text-align: center;
+    transform: translate(0px, -70px);
+}
+
+.blank2 {
+    background-color: #555555;
+    height: 5px;
+    transform: translate(0px, -120px);
+}
+
+.profession {
+    color: #f0f0f0;
+    text-align: center;
+    transform: translate(0px, -130px);
+}
+
+.work {
+    color: #f0f0f0;
+    text-align: center;
+    transform: translate(0px, -147px);
+}
+
+nav {
+    background-color: #292929;
+    height: fit-content;
+    width: fit-content;
+    left: 50%;
+    right: 50%;
+    transform: translate(300%, 3px);
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    position: sticky;
+    padding: 0;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+ul li a:hover {
+    background-color: #3b3b3b;
+    border-radius: 5px;
+}
+
+.about {
+    color: #f0f0f0;
+    transform: translate(380px, -430px);
+    width: fit-content;
+    height: 0px;
+}
