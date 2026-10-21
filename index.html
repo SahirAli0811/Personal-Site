@@ -3,6 +3,7 @@
 <head>
     <title>Sahir's WIKI</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body class="hero-section">
@@ -45,20 +46,52 @@
         </p>
     </section>
     <section id="project">
+        <h1 class="project-header">Projects Built by Meeeeee :3 </h1>
         <div class="f1-blare">
-            <img src="image/f1-blare.png" alt="F1 Blare">
+            <img class="f1-image" src="image/f1-blare.png" alt="F1 Blare">
             <div class="about-f1">
                 <h3>It is an alarm clock shaped as an F1 car steering wheel<br>
                     It was built for Stardance YSWS
                 </h3>
-                <p> Time Taken - 10hrs</p>
+                <p class="time-f1"> Time Taken - 10hrs</p>
                 <a href="https://github.com/SahirAli0811/F1-BLARE">
-                    <button>View Project</button>
+                    <button class="view-f1">View Project &nbsp <img class="send" src="image/send.png"></button>
+                </a>
+            </div>
+        </div>
+        <div class="dreampad">
+            <img class="dreampad-image" src="image/dreampad.png" alt="Dream Pad">
+            <div class="about-pad">
+                <h3>It is an custom built macropad with rotatory encoder and screen<br>
+                    It was built for Stardance YSWS
+                </h3>
+                <p class="time-pad"> Time Taken - 8hrs</p>
+                <a href="https://github.com/SahirAli0811/F1-BLARE">
+                    <button class="view-pad">View Project &nbsp <img class="send" src="image/send.png"></button>
                 </a>
             </div>
         </div>
     </section>
+    <section id="contact">
+        <h1 class="contact-header">Get In Touch with me🫦</h1>
 
+        <form id="contact-form">
+            <h1 class="title"> Contact </h1>
+            <div class="field">
+                <label>Name: </label>
+                <input type="text" placeholder="Your Name" required> 
+            </div>
+            <div class="field">
+                <label>Email: </label>
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="field">
+                <label>Message: </label>
+                <textarea required></textarea>
+            </div>
+            <button class="submit" type="submit">Send &nbsp <img class="send" src="image/send.png"></button>
+        </form>
+    </section>
 </body>
 
 </html>
