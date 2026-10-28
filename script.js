@@ -1,8 +1,6 @@
 const { createClient } = supabase;
-require("dotenv").config();
 
-const supabaseClient = createClient(process.env.SUPABASE_SITE, process.env.SUPABASE_ANON);
-
+const supabaseClient = createClient("https://ujxtaeuyzxhwtnliwmce.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVqeHRhZXV5enhod3RubGl3bWNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI1MDUyMjQsImV4cCI6MjEwODA4MTIyNH0.6coHJgw_n_douhL6vH6ll3vnB8wOrV0-pZCUm2j9sWI");
 const form = document.querySelector("#contact-form");
 
 form.addEventListener("submit", async (event) => {
@@ -47,12 +45,16 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
+    const slides = document.getElementsByClassName("mySlides");
+
+    if (slides.length === 0) return;
+
+    if (n > slides.length) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
+
+    for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
+
     slides[slideIndex - 1].style.display = "block";
 }
