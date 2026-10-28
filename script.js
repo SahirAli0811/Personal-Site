@@ -1,6 +1,7 @@
 const { createClient } = supabase;
+require("dotenv").config();
 
-const supabaseClient = createClient("SUPABASE_SITE", "SUPABASE_ANON");
+const supabaseClient = createClient(process.env.SUPABASE_SITE, process.env.SUPABASE_ANON);
 
 const form = document.querySelector("#contact-form");
 
