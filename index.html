@@ -3,7 +3,9 @@
 <head>
     <title>Sahir's WIKI</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body class="hero-section">
@@ -42,8 +44,36 @@
             &nbsp &nbsp 3. To meet Elon Musk irl<br>
             &nbsp &nbsp 4. To make games that people love<br>
             &nbsp &nbsp 5. To Start a happy family <br>
-
         </p>
+        <div class="slideshow-container">
+             <div class="mySlides fade">
+                <div class="numbertext" style="height: 10px;" style="width:100%">1/6</div>
+                <img src="/image/img1.jpg">
+             </div>
+             <div class="mySlides fade">
+                <div class="numbertext" style="height: 100%;" style="width:100%">2/6</div>
+                <img src="/image/img2.jpg">
+             </div>
+             <div class="mySlides fade">
+                <div class="numbertext" style="height: 10px;" style="width:100%">3/6</div>
+                <img src="/image/img3.jpg">
+             </div>
+             <div class="mySlides fade">
+                <div class="numbertext" style="height: 10px;"style="width:100%">4/6</div>
+                <img src="/image/img4.webp">
+             </div>
+             <div class="mySlides fade">
+                <div class="numbertext" style="height: 10px;"style="width:100%">5/6</div>
+                <img src="/image/img5.webp">
+             </div>
+             <div class="mySlides fade">
+                <div class="numbertext"style="height: 10px;"style="width:100%">6/6</div>
+                <img src="/image/img6.jpg">
+             </div>
+
+             <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlide(1)">&#10095;</a>
+        </div>
     </section>
     <section id="project">
         <h1 class="project-header">Projects Built by Meeeeee :3 </h1>
@@ -75,22 +105,30 @@
     <section id="contact">
         <h1 class="contact-header">Get In Touch with me🫦</h1>
 
+
         <form id="contact-form">
-            <h1 class="title"> Contact </h1>
+            <h1 class="title">Contact</h1>
+
             <div class="field">
-                <label>Name: </label>
-                <input type="text" placeholder="Your Name" required> 
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" placeholder="Your Name" required />
             </div>
+
             <div class="field">
-                <label>Email: </label>
-                <input type="email" placeholder="Your Email" required>
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="Your Email" required />
             </div>
+
             <div class="field">
-                <label>Message: </label>
-                <textarea required></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
             </div>
-            <button class="submit" type="submit">Send &nbsp <img class="send" src="image/send.png"></button>
+
+            <button class="submit" type="submit">
+                Send &nbsp <img class="sub" src="image/send.png"></button>
+            </button>
         </form>
+
     </section>
 </body>
 

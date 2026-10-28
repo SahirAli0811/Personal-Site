@@ -1,6 +1,6 @@
 .hero-section {
-    background-color: #171717;
-    height: 1080px;
+    background-image: url("image/bg-image.png");
+    height: 1000px;
 }
 
 aside {
@@ -10,6 +10,7 @@ aside {
     padding-left: 10px;
     padding-right: 10px;
     height: 450px;
+    border-radius: 10px;
 }
 
 .Name {
@@ -17,6 +18,7 @@ aside {
     text-align: center;
     transform: translate(0px, 10px);
     background-color: #555555;
+    border-radius: 10px;
 }
 
 .Logo {
@@ -30,6 +32,7 @@ aside {
     background-color: #555555;
     height: 5px;
     transform: translate(0px, -10px);
+    border-radius: 10px;
 }
 
 .born {
@@ -48,6 +51,7 @@ aside {
     background-color: #555555;
     height: 5px;
     transform: translate(0px, -120px);
+    border-radius: 10px;
 }
 
 .profession {
@@ -69,7 +73,7 @@ nav {
     left: 50%;
     right: 50%;
     transform: translate(300%, 3px);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 ul {
@@ -99,7 +103,13 @@ ul li a:hover {
     color: #f0f0f0;
     transform: translate(380px, -430px);
     width: fit-content;
-    height: 0px;
+    height: 225;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: #292929;
+    border-radius: 10px;
 }
 
 .project {
@@ -110,6 +120,7 @@ ul li a:hover {
     color: #f0f0f0;
     background-color: #555555;
     text-align: center;
+    border-radius: 10px;
 }
 
 .f1-blare {
@@ -210,6 +221,7 @@ ul li a:hover {
     background-color: #555555;
     transform: translate(0, -180px);
     text-align: center;
+    border-radius: 10px;
 }
 
 form {
@@ -227,7 +239,7 @@ form {
 
 .title {
     color: #f0f0f0;
-    transform: translate(58px, -50px)
+    transform: translate(58px, -50px);
 }
 
 .field label {
@@ -261,12 +273,87 @@ form {
     transform: translate(0, -50px);
 }
 
-.submit{
+.submit {
     background-color: #292929;
     width: 80px;
     height: 30px;
     color: #f0f0f0;
     border-color: #292929;
     text-align: left;
-    transform: translate(80px,-20px);
+    transform: translate(80px, -17px);
+}
+
+.sub {
+    width: 18px;
+    transform: translate(0, 3px)
+}
+
+.slideshow-container{
+    width: 100px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    transform: translate(-300px);
+}
+
+.mySlides{
+    display: none;
+}
+
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.prev{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.numbertext{
+    color: #f0f0f0;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from {opacity: 0.4}
+    to{opacity: 1;}
 }
