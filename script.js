@@ -1,6 +1,6 @@
 const { createClient } = supabase;
 
-const supabaseClient = createClient(SUPABASE_SITE, SUPABASE_ANON);
+const supabaseClient = createClient("SUPABASE_SITE", "SUPABASE_ANON");
 
 const form = document.querySelector("#contact-form");
 
