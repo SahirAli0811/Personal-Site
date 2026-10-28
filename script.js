@@ -1,6 +1,6 @@
 const { createClient } = supabase;
 
-const supabaseClient = createClient("https://ujxtaeuyzxhwtnliwmce.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVqeHRhZXV5enhod3RubGl3bWNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI1MDUyMjQsImV4cCI6MjEwODA4MTIyNH0.6coHJgw_n_douhL6vH6ll3vnB8wOrV0-pZCUm2j9sWI");
+const supabaseClient = createClient(SUPABASE_SITE, SUPABASE_ANON);
 
 const form = document.querySelector("#contact-form");
 
